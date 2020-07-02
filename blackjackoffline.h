@@ -1,4 +1,3 @@
-
 #ifndef BLACKJACKOFFLINE_H
 #define BLACKJACKOFFLINE_H
 

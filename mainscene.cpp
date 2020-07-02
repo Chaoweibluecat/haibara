@@ -4,9 +4,11 @@
 #include <QDebug>
 #include <QTimer>
 #include "mypushbutton.h"
+
 MainScene::MainScene(QWidget *parent) : QWidget(parent)
 {
     this->setFixedSize(1200,800);  //窗口大小
+    setWindowIcon(QIcon(":/Image/icon.PNG")); //设置图标
     //主界面的三个按钮
     MyPushButton* OnlineButton = new MyPushButton(":/Image/online_button.png");
     MyPushButton* OfflineButton = new MyPushButton(":/Image/offline_button.png");
@@ -25,14 +27,11 @@ MainScene::MainScene(QWidget *parent) : QWidget(parent)
         this->close();
     });
 
-
-
-
     //单机模式
     connect(OfflineButton,&MyPushButton::MousePress,[=](){
        ChooseGameWidget = new ChooseGame(0);
        QTimer::singleShot(200,this,[=](){
-           this->close();
+           this->hide();
            ChooseGameWidget->setGeometry(this->geometry());
            ChooseGameWidget->show();
        });
@@ -60,16 +59,14 @@ MainScene::MainScene(QWidget *parent) : QWidget(parent)
                 this->show();
         });
     });
-
-
 }
-
 
 void MainScene::paintEvent(QPaintEvent *event)
 {
     QWidget::paintEvent(event);
     QPainter painter(this); //定义画家
     QPixmap background;
-    background.load(":/Image/main_background.png");
-    painter.drawPixmap(this->rect(),background);
+    background.load(":/Image/mainscene_bg.png");
+    background.load(":/Image/mainscene_bg.PNG");
+    painter.drawPixmap(0,0,this->width(),this->height(),background);
 }

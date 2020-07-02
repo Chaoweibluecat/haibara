@@ -12,5 +12,20 @@
         <file>Image/handcard_background.png</file>
         <file>Image/start_button.png</file>
         <file>Image/return_button2.png</file>
+        <file>Image/clockPic.png</file>
+        <file>Image/clockPic.gif</file>
+        <file>Image/icon.PNG</file>
+        <file>Image/mainscene_bg.PNG</file>
+        <file>Image/draw_a_card_button.png</file>
+        <file>Image/halt_button.png</file>
+        <file>Image/card_hit_button.png</file>
+        <file>Image/draw_a_card_button_disabled.png</file>
+        <file>Image/lord_icon.png</file>
+        <file>Image/nonlord_icon.png</file>
+        <file>Image/end_game_button.png</file>
+        <file>Image/next_game_button.png</file>
+        <file>Image/bei.png</file>
+        <file>Image/blackjack_table.png</file>
+        <file>Image/bg.jpg</file>
     </qresource>
 </RCC>

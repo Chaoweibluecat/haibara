@@ -7,7 +7,8 @@
 
 #include <QMainWindow>
 #include <QWidget>
-#include "deskscene.h"
+#include "landlordofflinedesk.h"
+#include "blackjackofflinedesk.h"
 class ChooseGame : public QWidget
 {
     Q_OBJECT
